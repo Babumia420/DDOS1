@@ -221,8 +221,6 @@ def start_attack(target, attack_type="all", duration=1000):
         "udp": udp_flood,
         "http": http_flood,
         "https": https_flood,
-        "slowloris": slowloris,
-        "icmp": icmp_flood
     }
 
     if attack_type == "all":
